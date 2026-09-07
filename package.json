@@ -64,10 +64,10 @@
 	"dependencies": {
 		"is-promise": "^4.0.0",
 		"iso-error": "^6.0.5",
-		"path-equal": "^1.2.7",
+		"path-equal": "^1.2.8",
 		"satisfier": "^5.4.4",
 		"tersify": "^4.0.6",
-		"type-plus": "^8.0.0-beta.10"
+		"type-plus": "8.0.0-beta.10"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.11",
