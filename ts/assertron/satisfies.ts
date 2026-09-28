@@ -1,24 +1,20 @@
 import { createSatisfier } from 'satisfier'
-import type { If, IsExtend, NonComposableTypes } from 'type-plus'
+import type { NonComposableTypes } from 'type-plus'
 import { AssertionError } from '../errors.js'
 import { notSatisfiedMessage } from '../utils/index.js'
 
 export type SatisfyExpectation<T> =
-	| If<
-			IsExtend<T, string>,
-			T | RegExp,
-			If<
-				IsExtend<T, NonComposableTypes>,
-				T,
-				If<
-					IsExtend<T, Array<any>>,
-					T extends Array<infer E> ? Array<SatisfyExpectation<E>> : never,
-					{
-						[P in keyof T]?: T[P] extends string ? SatisfyExpectation<T[P]> | RegExp : SatisfyExpectation<T[P]>
-					}
-				>
-			>
-	  >
+	| ([T] extends [string]
+			? T | RegExp
+			: [T] extends [NonComposableTypes]
+				? T
+				: [T] extends [Array<any>]
+					? T extends Array<infer E>
+						? Array<SatisfyExpectation<E>>
+						: never
+					: {
+							[P in keyof T]?: T[P] extends string ? SatisfyExpectation<T[P]> | RegExp : SatisfyExpectation<T[P]>
+						})
 	| ((v: T) => boolean)
 
 /**
