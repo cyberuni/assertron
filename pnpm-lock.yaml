@@ -18,14 +18,14 @@ importers:
         specifier: ^1.2.8
         version: 1.2.8
       satisfier:
-        specifier: ^5.4.4
-        version: 5.4.4
+        specifier: ^5.4.6
+        version: 5.4.6
       tersify:
-        specifier: ^4.0.6
-        version: 4.0.6
+        specifier: ^4.0.8
+        version: 4.0.8
       type-plus:
-        specifier: 8.0.0-beta.11
-        version: 8.0.0-beta.11(typescript@7.0.2)
+        specifier: 8.0.0-beta.12
+        version: 8.0.0-beta.12(typescript@7.0.2)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.11
@@ -40,8 +40,8 @@ importers:
         specifier: ^21.2.2
         version: 21.2.2
       '@repobuddy/biome':
-        specifier: ^2.3.1
-        version: 2.3.1(@biomejs/biome@2.5.11)
+        specifier: ^2.4.0
+        version: 2.4.0(@biomejs/biome@2.5.11)
       '@size-limit/preset-small-lib':
         specifier: ^13.0.3
         version: 13.0.3(size-limit@13.0.3)
@@ -759,8 +759,8 @@ packages:
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
-  '@repobuddy/biome@2.3.1':
-    resolution: {integrity: sha512-dFxQSl+lYZ5Wc9TVUxrSwze9vwC6IBpg4zcbxJkLiZPPnYLX95Zvp9zC+ChPRmc2QpyVzqH4eGnxKzHaVZ1A7Q==}
+  '@repobuddy/biome@2.4.0':
+    resolution: {integrity: sha512-YdMjhey4Y9XzDR1cOIFFNBr6O+87TkFA1pViDFEFFryYKUdJ3qN/yZpCgcL1exZsuGDxC+0540hmJmtl9wKBQQ==}
     peerDependencies:
       '@biomejs/biome': '>= 2'
 
@@ -1857,8 +1857,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  satisfier@5.4.4:
-    resolution: {integrity: sha512-mjZ8PeqIuOI37rVglvx6JINVcRdXPqVWZkbg99oJyganLAvut4qlCAUDyvqbI7aYGQzF+1julBtcpL35r1NV1A==}
+  satisfier@5.4.6:
+    resolution: {integrity: sha512-xsWpHw+7sTgJjBVVJ0GC1MGwMpX4FnTjwwkZuBEjiHxhQFK10GS5Eqeh3RBT/Vp7dXOLlnY0iL5xI/7IEu918g==}
 
   semver@7.8.5:
     resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
@@ -1912,6 +1912,9 @@ packages:
 
   tersify@4.0.6:
     resolution: {integrity: sha512-+z2dTeRvbPyI7qiAmBY+VgWnhhN9IuaGjgrPfeF33hI4A/Yd9KT11tbc4l8vfIA3L/5EWiE0swvxOfAckGRuzA==}
+
+  tersify@4.0.8:
+    resolution: {integrity: sha512-8SP19qXCXiWztbyJLqmCwstqtZg7F5grbSov3yh8C+fyqHgKyfMaI/c5DCMKIGDkpoKX8cIz9ZqJxN7zZDtQcQ==}
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -1977,8 +1980,8 @@ packages:
     resolution: {integrity: sha512-AswgMPnpOoaVZHrrSBejETzEbuIA69OVGwfkHwfrY0A23VjWXBANzgq9+OymWOHAIArB7D1+1z498WY8fGg1Jw==}
     hasBin: true
 
-  type-plus@8.0.0-beta.11:
-    resolution: {integrity: sha512-8/QsyrWhzvUpq7HREOUR4T4sVMiVMBYvMLH9brYvfwc0Nr71a2mPAafrWwg6W5EWsgIr0TUBHBNtwO8neKZUUg==}
+  type-plus@8.0.0-beta.12:
+    resolution: {integrity: sha512-isf19V90L8JOn9VBWWwUfH8DU6G3dfPptr3R+JtraYWHqLAsXYI2f9x1HZVTkajrkSffdEbetXUXf7FcIjSIRg==}
     peerDependencies:
       typescript: '>= 5.4.0'
 
@@ -1999,6 +2002,10 @@ packages:
 
   unpartial@1.0.7:
     resolution: {integrity: sha512-DeyxEI3KSlmDihGAk3Js/p/Ca886ymIz39pWH3VVV/LZ36MsRETylFS37fdzWBWDjMlzB63Rdy2KLCdetOMPig==}
+    engines: {node: '>= 20'}
+
+  unpartial@1.0.8:
+    resolution: {integrity: sha512-LDZX3wrdUWQdVKLOgouW+fCqNfietx11UzdipDBRsnx1LWKBkv4FpA9OHVeSNz12STLk6oz07dgENEWnHyAgIg==}
     engines: {node: '>= 20'}
 
   verkit@0.4.1:
@@ -2686,7 +2693,7 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@repobuddy/biome@2.3.1(@biomejs/biome@2.5.11)':
+  '@repobuddy/biome@2.4.0(@biomejs/biome@2.5.11)':
     dependencies:
       '@biomejs/biome': 2.5.11
 
@@ -3545,9 +3552,9 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.6
       '@rolldown/binding-win32-x64-msvc': 1.2.6
 
-  satisfier@5.4.4:
+  satisfier@5.4.6:
     dependencies:
-      tersify: 4.0.6
+      tersify: 4.0.8
 
   semver@7.8.5: {}
 
@@ -3591,6 +3598,11 @@ snapshots:
     dependencies:
       acorn: 8.18.0
       unpartial: 1.0.7
+
+  tersify@4.0.8:
+    dependencies:
+      acorn: 8.18.0
+      unpartial: 1.0.8
 
   tinybench@2.9.0: {}
 
@@ -3644,7 +3656,7 @@ snapshots:
       '@turbo/windows-64': 2.10.12
       '@turbo/windows-arm64': 2.10.12
 
-  type-plus@8.0.0-beta.11(typescript@7.0.2):
+  type-plus@8.0.0-beta.12(typescript@7.0.2):
     dependencies:
       tersify: 4.0.6
       typescript: 7.0.2
@@ -3683,6 +3695,8 @@ snapshots:
   undici-types@8.3.0: {}
 
   unpartial@1.0.7: {}
+
+  unpartial@1.0.8: {}
 
   verkit@0.4.1: {}
 

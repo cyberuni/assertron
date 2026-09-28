@@ -65,16 +65,16 @@
 		"is-promise": "^4.0.0",
 		"iso-error": "^7.0.0",
 		"path-equal": "^1.2.8",
-		"satisfier": "^5.4.4",
-		"tersify": "^4.0.6",
-		"type-plus": "8.0.0-beta.11"
+		"satisfier": "^5.4.6",
+		"tersify": "^4.0.8",
+		"type-plus": "8.0.0-beta.12"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.11",
 		"@changesets/cli": "^3.0.1",
 		"@commitlint/cli": "^21.2.2",
 		"@commitlint/config-conventional": "^21.2.2",
-		"@repobuddy/biome": "^2.3.1",
+		"@repobuddy/biome": "^2.4.0",
 		"@size-limit/preset-small-lib": "^13.0.3",
 		"@types/lodash": "^4.14.182",
 		"@types/node": "^26.4.0",

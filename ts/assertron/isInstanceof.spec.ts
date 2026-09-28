@@ -1,4 +1,4 @@
-import { isType } from 'type-plus'
+import { testType } from 'type-plus'
 import { AssertionError, a } from '../index.js'
 
 it('accepts a class', () => {
@@ -12,7 +12,7 @@ it('works as a assertion', () => {
 	const v: unknown = new Foo()
 	a.isInstanceof(v, Foo)
 
-	isType.equal<true, Foo, typeof v>()
+	testType.equal<typeof v, Foo>(true)
 })
 
 it('throws if fail', () => {

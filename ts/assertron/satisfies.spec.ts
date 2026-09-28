@@ -1,5 +1,5 @@
 import { every, has, isInRange, some } from 'satisfier'
-import { isType } from 'type-plus'
+import { testType } from 'type-plus'
 import a, { AssertionError } from '../index.js'
 import { assertThrows, noStackTraceFor } from '../testUtils.js'
 
@@ -13,11 +13,26 @@ describe('non-composable types', () => {
 	})
 
 	test('predicate parameter is the widen type', () => {
-		a.satisfies(null, (v) => isType<null>(v))
-		a.satisfies(undefined, (v) => isType<undefined>(v))
-		a.satisfies(1, (v) => isType<number>(v))
-		a.satisfies('a', (v) => isType<string>(v))
-		a.satisfies(true, (v) => isType<boolean>(v))
+		a.satisfies(null, (v) => {
+			testType.equal<typeof v, null>(true)
+			return true
+		})
+		a.satisfies(undefined, (v) => {
+			testType.equal<typeof v, undefined>(true)
+			return true
+		})
+		a.satisfies(1, (v) => {
+			testType.equal<typeof v, number>(true)
+			return true
+		})
+		a.satisfies('a', (v) => {
+			testType.equal<typeof v, string>(true)
+			return true
+		})
+		a.satisfies(true, (v) => {
+			testType.equal<typeof v, boolean>(true)
+			return true
+		})
 	})
 
 	test('shows value directly in error', () => {
