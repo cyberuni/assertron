@@ -24,7 +24,7 @@ jobs:
 
       - uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
           cache: pnpm
 
       # The build itself stays on Node + pnpm on every leg, so all three runtimes are
