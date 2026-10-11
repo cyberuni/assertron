@@ -1,5 +1,5 @@
 import { every, has, isInRange, some } from 'satisfier'
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import a, { AssertionError } from '../index.js'
 import { assertThrows, noStackTraceFor } from '../testUtils.js'
 

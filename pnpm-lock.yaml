@@ -182,8 +182,8 @@ importers:
         specifier: ^4.0.8
         version: 4.0.8
       type-plus:
-        specifier: 8.0.0-beta.12
-        version: 8.0.0-beta.12(typescript@7.0.2)
+        specifier: ^8.0.0
+        version: 8.0.0(typescript@7.0.2)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.11
@@ -198,8 +198,8 @@ importers:
         specifier: ^21.2.2
         version: 21.2.2
       '@repobuddy/biome':
-        specifier: ^2.4.0
-        version: 2.4.0(@biomejs/biome@2.5.11)
+        specifier: ^2.5.1
+        version: 2.5.1(@biomejs/biome@2.5.11)
       '@size-limit/preset-small-lib':
         specifier: ^14.0.0
         version: 14.1.0(size-limit@14.1.0)
@@ -917,8 +917,8 @@ packages:
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
-  '@repobuddy/biome@2.4.0':
-    resolution: {integrity: sha512-YdMjhey4Y9XzDR1cOIFFNBr6O+87TkFA1pViDFEFFryYKUdJ3qN/yZpCgcL1exZsuGDxC+0540hmJmtl9wKBQQ==}
+  '@repobuddy/biome@2.5.1':
+    resolution: {integrity: sha512-sdNvV6T5PTFPD1CrpiByf92Zm4nsvoAlBObx1x74LzKPOkaZ0rB7AAEBXMUZgjLYBoc2HGDXjx7qKxiIOn37Ww==}
     peerDependencies:
       '@biomejs/biome': '>= 2'
 
@@ -2001,10 +2001,14 @@ packages:
     resolution: {integrity: sha512-AswgMPnpOoaVZHrrSBejETzEbuIA69OVGwfkHwfrY0A23VjWXBANzgq9+OymWOHAIArB7D1+1z498WY8fGg1Jw==}
     hasBin: true
 
-  type-plus@8.0.0-beta.12:
-    resolution: {integrity: sha512-isf19V90L8JOn9VBWWwUfH8DU6G3dfPptr3R+JtraYWHqLAsXYI2f9x1HZVTkajrkSffdEbetXUXf7FcIjSIRg==}
+  type-plus@8.0.0:
+    resolution: {integrity: sha512-wYKemYpT2XPgZyqZUvo6pT0ZiwWHcLJMyR68ZjY4IB96ozUpxrb6M7pj9xYzNcBHWG4r17WqXnkGRQZrHAWs7A==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       typescript: '>= 5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
@@ -2020,10 +2024,6 @@ packages:
 
   undici-types@8.3.0:
     resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
-
-  unpartial@1.0.7:
-    resolution: {integrity: sha512-DeyxEI3KSlmDihGAk3Js/p/Ca886ymIz39pWH3VVV/LZ36MsRETylFS37fdzWBWDjMlzB63Rdy2KLCdetOMPig==}
-    engines: {node: '>= 20'}
 
   unpartial@1.0.8:
     resolution: {integrity: sha512-LDZX3wrdUWQdVKLOgouW+fCqNfietx11UzdipDBRsnx1LWKBkv4FpA9OHVeSNz12STLk6oz07dgENEWnHyAgIg==}
@@ -2714,7 +2714,7 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@repobuddy/biome@2.4.0(@biomejs/biome@2.5.11)':
+  '@repobuddy/biome@2.5.1(@biomejs/biome@2.5.11)':
     dependencies:
       '@biomejs/biome': 2.5.11
 
@@ -3539,11 +3539,11 @@ snapshots:
       '@turbo/windows-64': 2.10.12
       '@turbo/windows-arm64': 2.10.12
 
-  type-plus@8.0.0-beta.12(typescript@7.0.2):
+  type-plus@8.0.0(typescript@7.0.2):
     dependencies:
-      tersify: 4.0.8
+      unpartial: 1.0.8
+    optionalDependencies:
       typescript: 7.0.2
-      unpartial: 1.0.7
 
   typescript@7.0.2:
     optionalDependencies:
@@ -3576,8 +3576,6 @@ snapshots:
       quansync: 1.0.0
 
   undici-types@8.3.0: {}
-
-  unpartial@1.0.7: {}
 
   unpartial@1.0.8: {}
 

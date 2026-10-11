@@ -30,6 +30,7 @@ jobs:
     uses: cyberuni/.github/.github/workflows/pnpm-release-changeset-oidc.yml@main
     needs: [code, runtimes, publish-gate]
     permissions:
+      actions: write
       id-token: write
       contents: write
       pull-requests: write

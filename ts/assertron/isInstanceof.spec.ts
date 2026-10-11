@@ -1,4 +1,4 @@
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { AssertionError, a } from '../index.js'
 
 it('accepts a class', () => {

@@ -1,5 +1,5 @@
 import t from 'node:assert'
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import a from '../index.js'
 import { assertAsyncThrows, noStackTraceFor } from '../testUtils.js'
 
