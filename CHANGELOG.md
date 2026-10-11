@@ -1,5 +1,11 @@
 # assertron
 
+## 11.7.2
+
+### Patch Changes
+
+- 657798d: Update `type-plus` to `^8.0.0`.
+
 ## 11.7.1
 
 ### Patch Changes
