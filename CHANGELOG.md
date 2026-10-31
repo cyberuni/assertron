@@ -1,5 +1,11 @@
 # assertron
 
+## 11.7.3
+
+### Patch Changes
+
+- 2bb2bef: Include `CHANGELOG.md` in the published package.
+
 ## 11.7.2
 
 ### Patch Changes
